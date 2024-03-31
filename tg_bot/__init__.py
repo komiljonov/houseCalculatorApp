@@ -74,7 +74,7 @@ class Bot:
         await tgUser.send_message("Assalomu aleykum. Xush kelibsiz.", reply_markup=ReplyKeyboardMarkup([
             [
                 "Kalkulator",
-                "Savol berish"
+                # "Savol berish"
             ]
         ]))
 
@@ -126,7 +126,7 @@ class Bot:
         b = b + f
         res = b // (temp.credit_duration*12)
 
-        await tgUser.send_message(f"Oylik to'lov: {res}")
+        await tgUser.send_message(f"Oylik to'lov: {res:,}")
         return await self.start(update, context)
 
 
