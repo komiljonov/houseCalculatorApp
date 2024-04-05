@@ -33,3 +33,26 @@ class Temp(models.Model):
     startup_price = models.IntegerField(null=True, blank=True)
     percent_per_year = models.IntegerField(null=True, blank=True)
     credit_duration = models.IntegerField(null=True,blank=True)
+
+
+
+
+
+class Question(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+
+
+    message = models.TextField()
+
+
+
+    user_message_id = models.BigIntegerField()
+    group_message_id = models.BigIntegerField()
+
+    # If user sent message sender is 1. If admin replyed to user sender is 2
+    sender = models.IntegerField(default=1)
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+
+
