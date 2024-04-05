@@ -86,7 +86,7 @@ class Bot:
         await tgUser.send_message("Assalomu aleykum. Xush kelibsiz.", reply_markup=ReplyKeyboardMarkup([
             [
                 "Kalkulator",
-                # "Savol berish"
+                "Savol berish"
             ]
         ]))
 
