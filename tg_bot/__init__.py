@@ -34,8 +34,8 @@ class Bot:
                     MENU: [
                         MessageHandler(filters.Text(
                             ["Kalkulator"]), self.calculator),
-                        MessageHandler(filters.Text(
-                            ["Savol berish"]), self.question)
+                        #MessageHandler(filters.Text(
+                        #    ["Savol berish"]), self.question)
                     ],
                     HOME_PRICE: [
                         MessageHandler(filters.Regex(
@@ -89,7 +89,7 @@ class Bot:
         await tgUser.send_message("Assalomu aleykum. Xush kelibsiz.", reply_markup=ReplyKeyboardMarkup([
             [
                 "Kalkulator",
-                "Savol berish"
+                #"Savol berish"
             ]
         ]))
 
