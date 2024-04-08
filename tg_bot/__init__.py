@@ -1,5 +1,4 @@
 from io import BytesIO
-from tkinter.messagebox import QUESTION
 
 from django.core.files.base import File
 from telegram import Bot, Update, Message
@@ -16,7 +15,7 @@ from telegram.ext import (
 )
 
 from bot.models import Question, User
-from constants import BACK, CREDIT_DURATION, EXCLUDE, HOME_PRICE, MENU, PERCENT_PER_YEAR, STARTUP_PRICE
+from constants import BACK, CREDIT_DURATION, EXCLUDE, HOME_PRICE, MENU, PERCENT_PER_YEAR, STARTUP_PRICE,QUESTION
 from utils import ReplyKeyboardMarkup
 
 
